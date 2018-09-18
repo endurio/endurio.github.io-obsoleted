@@ -82,6 +82,7 @@ html, body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden !important;
 }
 
 a {
@@ -2320,13 +2321,13 @@ roadmap
   top: 85px;
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .width-0 {
     max-width: 0;
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media (max-width: 991px) {
   .roadmap-list {
     margin-bottom: 0;
   }
