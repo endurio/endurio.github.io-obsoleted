@@ -1,0 +1,160 @@
+#grid {
+	-moz-transform: translate(1px, 0px);
+	-ms-transform: translate(1px, 0px);
+	-webkit-transform: translate(1px, 0px);
+	transform: translate(1px, 0px);
+}
+
+/* GRAPH - 1 */
+
+.text-demand {
+	color: #cca467;
+	font-weight: bold;
+}
+
+.text-supply {
+	color: #5ab8b3;
+	font-weight: bold;
+}
+
+#graph-1 {
+	stroke: #cca467;
+	stroke-width: 0.2;
+	fill: transparent;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	-moz-animation: lineani 20s linear forwards;
+	-webkit-animation: lineani 20s linear forwards;
+	animation: lineani 20s linear forwards;
+}
+
+#graph-2 {
+	stroke: #5ab8b3;
+	stroke-width: 0.2;
+	fill: transparent;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	-moz-animation: lineani 20s linear forwards;
+	-webkit-animation: lineani 20s linear forwards;
+	animation: lineani 20s linear forwards;
+}
+
+@-moz-keyframes lineani {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@-webkit-keyframes lineani {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes lineani {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+.underlay {
+	stroke-width: 5;
+	fill: transparent;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: gray;
+}
+
+.charts-container {
+	padding: 20px;
+	width: 100%;
+	max-width: 1024px;
+	display: inline-block;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.chart {
+	color: #4a667a;
+	text-align: left;
+	position: relative;
+	height: auto;
+	/* background-color: white; */
+	display: inline-block;
+	float: left;
+	position: relative;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 10px;
+	padding: 15px 20px 65px 20px;
+}
+
+.chart.circle {
+	padding: 15px 20px 40px 20px;
+}
+
+.chart {
+	width: calc(100% - 20px);
+}
+
+.title {
+	font-size: 22px;
+	margin-bottom: 12px;
+}
+
+.chart-svg {
+	position: relative;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.chart-line {
+	width: 100%;
+}
+
+.valueX {
+	font-size: 14px;
+}
+
+.grid {
+	stroke-width: 0.02;
+	stroke: gray;
+}
+
+.horizontal {
+	stroke-dasharray: 0.05;
+}
+
+.vertical {
+	stroke-dasharray: 0.1;
+}
+
+.axis {
+	stroke-dasharray: 0;
+}
+
+/* CLEARFIX HELPER */
+
+.cf:before, .cf:after {
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+
+/**
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+
+.cf {
+	*zoom: 1;
+}
