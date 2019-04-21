@@ -155,6 +155,6 @@ function drawLineGraph(graph, points, container, id) {
 }
 
 $(window).on("load", function() {
-	drawGrid('#chart-1');
+	//drawGrid('#chart-1');
 	drawLineGraph("#chart-1", null, "#graph-1-container", 1);
 });
